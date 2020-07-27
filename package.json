@@ -6,13 +6,13 @@
   "keywords": [
     "javascript",
     "language",
-    "",
+    "neuron",
     "compiler"
   ],
   "author": "underpig",
   "license": "MIT",
   "bin": {
-    "neuron": "node --experimental-json-modules ./bin/neuron.mjs"
+    "neuron": "./bin/neuron.mjs"
   },
   "scripts": {
     "start": "node --experimental-json-modules ./bin/neuron.mjs",

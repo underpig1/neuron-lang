@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --experimental-json-modules --no-warnings
 
 import {compile} from "../lib/compiler/compiler.mjs";
 import {createInterface} from "readline";
