@@ -1,0 +1,48 @@
+{
+  "time": {
+    "now": {
+      "type": ["identifier"],
+      "identity": "Date.now()"
+    },
+    "day": {
+      "type": ["identifier"],
+      "identity": "new Date().getDay()"
+    },
+    "year": {
+      "type": ["identifier"],
+      "identity": "new Date().getFullYear()"
+    },
+    "hour": {
+      "type": ["identifier"],
+      "identity": "new Date().getHours()"
+    },
+    "milliseconds": {
+      "type": ["identifier"],
+      "identity": "new Date().getMilliseconds()"
+    },
+    "minutes": {
+      "type": ["identifier"],
+      "identity": "new Date().getMinutes()"
+    },
+    "month": {
+      "type": ["identifier"],
+      "identity": "new Date().getMonth()"
+    },
+    "seconds": {
+      "type": ["identifier"],
+      "identity": "new Date().getSeconds()"
+    },
+    "time": {
+      "type": ["identifier"],
+      "identity": "new Date().getTime()"
+    },
+    "timezone": {
+      "type": ["identifier"],
+      "identity": "new Date().getTimezoneOffset()"
+    },
+    "UTC": {
+      "type": ["identifier"],
+      "identity": "new Date().getUTCDate()"
+    }
+  }
+}

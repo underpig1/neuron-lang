@@ -1,0 +1,12 @@
+{
+  "json": {
+    "parse": {
+      "type": ["expression"],
+      "identity": "return JSON.parse(arguments[0]);"
+    },
+    "string": {
+      "type": ["expression"],
+      "identity": "return JSON.stringify(arguments[0]);"
+    }
+  }
+}

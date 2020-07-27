@@ -1,0 +1,16 @@
+{
+  "window": {
+    "width": {
+      "type": ["identifier", "assignment"],
+      "identity": "window.innerWidth"
+    },
+    "height": {
+      "type": ["identifier", "assignment"],
+      "identity": "window.innerHeight"
+    },
+    "event": {
+      "type": ["identifier"],
+      "identity": "window.event.type"
+    }
+  }
+}

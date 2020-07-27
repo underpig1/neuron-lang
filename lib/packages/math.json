@@ -1,0 +1,148 @@
+{
+  "math": {
+    "infinity": {
+      "type": ["identifier"],
+      "identity": "Infinity"
+    },
+    "pi": {
+      "type": ["identifier"],
+      "identity": "Math.PI"
+    },
+    "E": {
+      "type": ["identifier"],
+      "identity": "Math.E"
+    },
+    "abs": {
+      "type": ["expression"],
+      "identity": "return Math.abs(arguments[0]);"
+    },
+    "acos": {
+      "type": ["expression"],
+      "identity": "return Math.acos(arguments[0]);"
+    },
+    "acosh": {
+      "type": ["expression"],
+      "identity": "return Math.acosh(arguments[0]);"
+    },
+    "asin": {
+      "type": ["expression"],
+      "identity": "return Math.asin(arguments[0]);"
+    },
+    "asinh": {
+      "type": ["expression"],
+      "identity": "return Math.asinh(arguments[0]);"
+    },
+    "atan": {
+      "type": ["expression"],
+      "identity": "return Math.atan(arguments[0]);"
+    },
+    "atanh": {
+      "type": ["expression"],
+      "identity": "return Math.atanh(arguments[0]);"
+    },
+    "atan2": {
+      "type": ["expression"],
+      "identity": "return Math.atan2(arguments[0], arguments[1]);"
+    },
+    "cbrt": {
+      "type": ["expression"],
+      "identity": "return Math.cbrt(arguments[0]);"
+    },
+    "ceil": {
+      "type": ["expression"],
+      "identity": "return Math.ceil(arguments[0]);"
+    },
+    "clz32": {
+      "type": ["expression"],
+      "identity": "return Math.clz32(arguments[0]);"
+    },
+    "cos": {
+      "type": ["expression"],
+      "identity": "return Math.cos(arguments[0]);"
+    },
+    "cosh": {
+      "type": ["expression"],
+      "identity": "return Math.cosh(arguments[0]);"
+    },
+    "exp": {
+      "type": ["expression"],
+      "identity": "return Math.exp(arguments[0]);"
+    },
+    "floor": {
+      "type": ["expression"],
+      "identity": "return Math.floor(arguments[0]);"
+    },
+    "fround": {
+      "type": ["expression"],
+      "identity": "return Math.fround(arguments[0]);"
+    },
+    "hypot": {
+      "type": ["expression"],
+      "identity": "return Math.hypot(...arguments);"
+    },
+    "imul": {
+      "type": ["expression"],
+      "identity": "return Math.imul(arguments[0], arguments[1]);"
+    },
+    "log": {
+      "type": ["expression"],
+      "identity": "return Math.log(arguments[0]);"
+    },
+    "log10": {
+      "type": ["expression"],
+      "identity": "return Math.log10(arguments[0]);"
+    },
+    "log2": {
+      "type": ["expression"],
+      "identity": "return Math.log2(arguments[0]);"
+    },
+    "max": {
+      "type": ["expression"],
+      "identity": "return Math.max(...arguments);"
+    },
+    "min": {
+      "type": ["expression"],
+      "identity": "return Math.min(...arguments);"
+    },
+    "pow": {
+      "type": ["expression"],
+      "identity": "return Math.pow(arguments[0], arguments[1]);"
+    },
+    "random": {
+      "type": ["identifier"],
+      "identity": "Math.random()"
+    },
+    "round": {
+      "type": ["expression"],
+      "identity": "return Math.round(arguments[0]);"
+    },
+    "sign": {
+      "type": ["expression"],
+      "identity": "return Math.sign(arguments[0]);"
+    },
+    "sin": {
+      "type": ["expression"],
+      "identity": "return Math.sin(arguments[0]);"
+    },
+    "sinh": {
+      "type": ["expression"],
+      "identity": "return Math.sinh(arguments[0]);"
+    },
+    "sqrt": {
+      "type": ["expression"],
+      "identity": "return Math.sqrt(arguments[0]);"
+    },
+    "tan": {
+      "type": ["expression"],
+      "identity": "return Math.tan(arguments[0]);"
+    },
+    "tanh": {
+      "type": ["expression"],
+      "identity": "return Math.tanh(arguments[0]);"
+    },
+    "trunc": {
+      "type": ["expression"],
+      "identity": "return Math.trunc(arguments[0]);"
+    }
+  }
+}

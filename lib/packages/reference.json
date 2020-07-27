@@ -1,0 +1,24 @@
+{
+  "reference": {
+    "identifier": {
+      "type": ["identifier"],
+      "identity": "identifier",
+      "reference": "reference.identifier"
+    },
+    "expression": {
+      "type": ["expression"],
+      "identity": "return arguments[0];",
+      "reference": "[reference.expression => ...]"
+    },
+    "assignment": {
+      "type": ["assignment"],
+      "identity": "return arguments[0];",
+      "reference": "reference.assignment = ..."
+    },
+    "property": {
+      "type": ["property"],
+      "identity": "arguments[0];",
+      "reference": "reference.property(...)"
+    }
+  }
+}

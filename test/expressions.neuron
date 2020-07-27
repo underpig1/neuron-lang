@@ -1,0 +1,5 @@
+log(obj.log, math.pi);
+
+obj {
+  log: [math.pi == math.pi];
+}

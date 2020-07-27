@@ -1,0 +1,5 @@
+method(input);
+
+method {
+  log(#0);
+}

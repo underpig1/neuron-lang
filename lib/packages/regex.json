@@ -1,0 +1,12 @@
+{
+  "re": {
+    "match": {
+      "type": ["expression"],
+      "identity": "return arguments[0].match(new RegExp(arguments[1], 'g'))[0];"
+    },
+    "replace": {
+      "type": ["expression"],
+      "identity": "return arguments[0].replace(arguments[1], arguments[2]);"
+    }
+  }
+}

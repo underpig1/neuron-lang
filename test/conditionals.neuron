@@ -1,0 +1,7 @@
+if (math.pi == math.pi) {
+  log([math.pi == math.pi]);
+}
+
+if ([int? => math.pi]) {
+  log([int? => math.pi]);
+}

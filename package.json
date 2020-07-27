@@ -1,0 +1,34 @@
+{
+  "name": "neuron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/neuron.mjs",
+  "keywords": [
+    "javascript",
+    "language",
+    "",
+    "compiler"
+  ],
+  "author": "underpig",
+  "license": "MIT",
+  "bin": {
+    "neuron": "node --experimental-json-modules ./bin/neuron.mjs"
+  },
+  "scripts": {
+    "start": "node --experimental-json-modules ./bin/neuron.mjs",
+    "test": "node --experimental-json-modules ./bin/run_tests.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "files": [
+    "/bin",
+    "/lib",
+    "/test"
+  ],
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0",
+    "node": ">=6.0.0"
+  }
+}
