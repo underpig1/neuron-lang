@@ -14,8 +14,6 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-import sphinx_rtd_theme
-
 # -- Project information -----------------------------------------------------
 
 project = 'neuron'
@@ -32,8 +30,7 @@ release = '1.0.0'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-  'recommonmark',
-  'sphinx_rtd_theme'
+  'recommonmark'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -49,8 +46,8 @@ exclude_patterns = []
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
-html_theme = 'sphinx_rtd_theme'
+
+html_theme = 'default'
 
 master_doc = 'index'
 
