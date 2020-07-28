@@ -16,7 +16,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'neuron'
+project = 'Neuron'
 copyright = '2020, underpig'
 author = 'underpig'
 
