@@ -12,7 +12,7 @@ Install Neuron with `npm`:
 ```
 npm install -g neuron-lang
 ```
-Install Neuron with its web framework:
+Use Neuron in the browser through its web framework:
 ```html
 <script src = "https://github.com/underpig1/neuron-lang/blob/master/lib/browser/browser.mjs" type = "module"></script>
 ```
