@@ -8,5 +8,5 @@
 npm install -g neuron-lang
 ```
 ```html
-<script src = "https://raw.githubusercontent.com/underpig1/neuron-lang/master/lib/browser/browser.mjs" type = "module"></script>
+<script src = "https://github.com/underpig1/neuron-lang/blob/master/lib/browser/browser.mjs" type = "module"></script>
 ```
