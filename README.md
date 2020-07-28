@@ -45,10 +45,10 @@ Neuron can be used in the browser through its web framework:
 </script>
 ```
 ### Support
-| | Chrome | Edge | Firefox | IE | Safari |
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Window API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Time API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| RegExp API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| JSON API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Math API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_exclamation_mark: | :heavy_check_mark: |
+| | Chrome | Edge | Firefox | IE | Safari | Command Line |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Window API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| Time API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| RegExp API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| JSON API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Math API | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_exclamation_mark: | :heavy_check_mark: | :heavy_check_mark: |
