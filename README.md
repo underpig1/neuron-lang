@@ -7,3 +7,6 @@
 ```
 npm install -g neuron-lang
 ```
+```html
+<script src = "https://raw.githubusercontent.com/underpig1/neuron-lang/master/lib/browser/browser.mjs" type = "module"></script>
+```
