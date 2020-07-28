@@ -4,6 +4,7 @@
 ![neuron-lang](https://github.com/underpig1/neuron-lang/workflows/neuron-lang/badge.svg)
 [![Documentation Status](https://readthedocs.org/projects/neuron-lang/badge/?version=latest)](https://neuron-lang.readthedocs.io/en/latest/?badge=latest)
 
+Neuron is a language that compiles directly into HTML, CSS, and JavaScript.
 [Documentation](https://neuron-lang.readthedocs.io/en/latest/index.html)
 
 ```
