@@ -15,6 +15,5 @@ Welcome to neuron's documentation!
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
+* :ref:`index`
 * :ref:`search`
