@@ -12,7 +12,7 @@ Neuron
 
 
 
-Indices and tables
+Contents
 ==================
 
 * :ref:`index`
