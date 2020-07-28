@@ -5,11 +5,14 @@
 [![Documentation Status](https://readthedocs.org/projects/neuron-lang/badge/?version=latest)](https://neuron-lang.readthedocs.io/en/latest/?badge=latest)
 
 Neuron is a language that compiles directly into HTML, CSS, and JavaScript.
-[Documentation](https://neuron-lang.readthedocs.io/en/latest/index.html)
 
+[Documentation](https://neuron-lang.readthedocs.io/en/latest/index.html)
+## Installation
+Install Neuron with `npm`:
 ```
 npm install -g neuron-lang
 ```
+Install Neuron with its web framework:
 ```html
 <script src = "https://github.com/underpig1/neuron-lang/blob/master/lib/browser/browser.mjs" type = "module"></script>
 ```
