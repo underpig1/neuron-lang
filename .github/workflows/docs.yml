@@ -6,13 +6,13 @@ on:
     - 'docs/source/*'
 
 jobs:
-  cmake:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
     - name: install
-      run: brew install sphinx-doc
-    - name: cmake
+      run: pip install --user sphinx
+    - name: build
       run: |
         cd docs
         make html
