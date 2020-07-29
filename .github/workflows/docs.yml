@@ -12,7 +12,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: install
       run: |
-        pip install --user sphinx
+        pip install sphinx
+        pip install recommonmark
         echo "::add-path::C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts"
     - name: build
       run: |
