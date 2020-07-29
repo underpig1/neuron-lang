@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install
-      run: pip install --user sphinx
+      run: apt-get install python3-sphinx
     - name: cmake
       run: |
         cd docs
