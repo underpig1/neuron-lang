@@ -1,0 +1,16 @@
+name: Documentation
+
+on:
+  push:
+    paths:
+    - 'docs/**'
+
+jobs:
+  cmake:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: cmake
+      run: |
+        cd docs
+        make html
