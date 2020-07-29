@@ -17,5 +17,4 @@ Contents
 
 * :ref:`index`
 * :ref:`index`
-* :ref:`index`
 * :ref:`search`
