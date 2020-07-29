@@ -14,8 +14,11 @@ jobs:
       run: |
         pip install sphinx
         pip install recommonmark
+        pip install sphinx_rtd_theme
         echo "::add-path::C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts"
     - name: build
       run: |
         cd docs
         make html
+    - name: push
+      run: git push origin master
