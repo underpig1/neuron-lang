@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install
-      run: apt-get install python3-sphinx
+      run: brew install sphinx-doc
     - name: cmake
       run: |
         cd docs
