@@ -1,4 +1,4 @@
-name: neuron-lang
+name: Publish
 
 on:
   release:
