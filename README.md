@@ -6,7 +6,7 @@
 
 Neuron is a language that compiles directly into HTML, CSS, and JavaScript. Neuron is currently under heavy development.
 
-[Documentation](https://neuron-lang.readthedocs.io/en/latest/index.html)
+[Documentation](https://neuron-lang.readthedocs.io/en/master/)
 ## Installation
 Install Neuron with `npm`:
 ```
