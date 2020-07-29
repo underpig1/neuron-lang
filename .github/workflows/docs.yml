@@ -11,7 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install
-      run: pip install --user sphinx
+      run: |
+        pip install --user sphinx
+        echo "::add-path::C:\Users\runneradmin\AppData\Roaming\Python\Python37\Scripts"
     - name: build
       run: |
         cd docs
