@@ -1,3 +1,9 @@
+.. toctree::
+   :maxdepth: 2
+   index
+   getting-started
+   
+
 # Neuron
 ![](../g1143.png "Neuron")
 
