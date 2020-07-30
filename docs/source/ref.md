@@ -8,11 +8,22 @@ myObject {
   method(parameters);
 }
 ```
+Objects can hold both properties and methods, accessible to itself and to other objects:
+```javascript
+myObject {
+  width: 1px;
+  height: 1px;
+  position: 10px 10px;
+  log(this.position);
+}
+
+log(myObject.position);
+```
 Objects containing HTML- and CSS-specific properties should be invoked as such:
 ```javascript
 invoke(myObject);
 ```
-Functions are to be called as methods:
+Functions can be called as methods:
 ```javascript
 myObject(parameters)
 ```
@@ -20,7 +31,7 @@ Functions with return values can be called as inline functions:
 ```javascript
 [myObject => parameters]
 ```
-Functions can also take parameters, prefixed with a `#` and the parameter number:
+Functions can also take parameters, prefixed with `#` and followed by their parameter number:
 ```javascript
 absoluteValue {
   return([math.abs => #0]); // #0 defines the first parameter passed
@@ -37,4 +48,41 @@ add {
 
 add(0, 1);
 // logs '0 + 1 is 1'
+```
+
+## Bracket Notation
+Groupings, literals, and inline functions are all preceded by and followed by brackets. Bracket notation is defined by the following syntax:
+```javascript
+[function => parameters]
+[function parameters]
+[literal]
+[grouping]
+```
+Bracket notation can be embedded in parameters or values:
+```javascript
+log([function => parameters]px, [grouping]px)
+```
+### Groupings
+Parameters are seperated by commas or spaces. Bracket notation can escape parameter seperators, and pass a single parameter.
+```javascript
+log(Hello, World!) // The parameter seperator is not escaped
+// logs 'Hello' and 'World!' in 'Hello World!'
+log([Hello, World!]) // Bracket notation
+// logs 'Hello, World!'
+```
+### Literals
+Literals evaluate its contents.
+```javascript
+log(0 + 1) // Evaluated as a string
+// logs '0 + 1'
+log([0 + 1]) // Evaluated as a literal
+// logs '1'
+```
+### Inline Functions
+Inline functions can pass parameters to a function with a return value, seperated by spaces.
+```javascript
+[function => parameters]
+```
+```javascript
+log([math.sqrt => 1]px);
 ```
