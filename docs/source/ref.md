@@ -2,26 +2,26 @@
 
 ## Objects and Functions
 Objects and functions can be integrated. Neuronic Objects can hold both properties and methods accessable to itself and to other objects, providing it with a dynamic foundation for script execution. Objects and functions are defined in the following syntax:
-```javascript
+```js
 myObject {
   property: value;
   method(parameters);
 }
 ```
 Objects containing HTML- and CSS-specific properties should be invoked as such:
-```javascript
+```js
 invoke(myObject);
 ```
 Functions are to be called as methods:
-```javascript
+```js
 myObject(parameters)
 ```
 Functions with return values can be called as inline functions:
-```javascript
+```js
 [myObject => parameters]
 ```
 Functions can also take parameters, prefixed with a `#` and the parameter number:
-```javascript
+```js
 absoluteValue {
   return([math.abs => #0]); // #0 defines the first parameter passed
 }
