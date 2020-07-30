@@ -97,3 +97,28 @@ Variables can then be referenced or reassigned:
 log(#myVar);
 #myVar = value;
 ```
+Object properties can be referenced and reassigned as well:
+```javascript
+log(myObject.position);
+myObject.position = value;
+```
+
+## Conditionals
+Conditionals can be defined with the following syntax:
+```javascript
+if (condition) {
+  // contents
+}
+```
+The conditional will execute if the condition returns `true`.
+### Operators
+Conditions can contain the following operators:
+
+`<`
+Less than operator
+`>`
+Greater than operator
+`<=`
+Less than or equal to operator
+`>=`
+Greater than or equal to operator
