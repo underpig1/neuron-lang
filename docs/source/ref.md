@@ -167,3 +167,5 @@ Iterators are capable of being embedded in executable objects.
 
 ### Assignment Operators
 `=` Assignment operator
+
+## Inheritance
