@@ -38,8 +38,3 @@ add {
 add(0, 1);
 // logs '0 + 1 is 1'
 ```
-
-```eval_rst
-Functions can be executed with the following syntax as well:
-  Functions can be executed with the following syntax as well:
-```
