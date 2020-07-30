@@ -110,15 +110,60 @@ if (condition) {
   // contents
 }
 ```
-The conditional will execute if the condition returns `true`.
-### Operators
-Conditions can contain the following operators:
+The conditional will execute if the condition returns `true`. Conditionals are capable of being embedded in executable objects.
 
-`<`
-Less than operator
-`>`
-Greater than operator
-`<=`
-Less than or equal to operator
-`>=`
-Greater than or equal to operator
+## Iterators
+Iterators can be defined with the following syntax:
+```javascript
+for (var in/=> value) {
+  // contents
+}
+```
+The iterator will iterate through the value, executing its contents. The variable can then be used with the prefixed `#` notation.
+```javascript
+for (var => value) {
+  log(#var);
+}
+```
+Iterators are capable of being embedded in executable objects.
+
+## Operators
+### Arithmetic Operators
+`+` Addition operator
+
+`-` Subtraction operator
+
+`/` Division operator
+
+`*` Multiplication operator
+
+`%` Remainder operator
+
+`**` Exponentiation operator
+
+### Relational Operators
+`<` Less than operator
+
+`>` Greater than operator
+
+`<=` Less than or equal to operator
+
+`>=` Greater than or equal to operator
+
+`==` Equality operator
+
+`!=` Inequality operator
+
+`===` Identity operator
+
+`!==` Nonidentity operator
+
+### Logical Operators
+`&&` Logical AND
+
+`||` Logical OR
+
+`!` Logical NOT operator
+
+### Assignment Operators
+`=` Assignment operator
