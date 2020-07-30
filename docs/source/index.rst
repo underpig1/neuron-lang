@@ -4,5 +4,5 @@ Contents
 .. toctree::
    :maxdepth: 2
    
-   index
+   neuron-lang
    getting-started
