@@ -86,3 +86,14 @@ Inline functions can pass parameters to a function with a return value, seperate
 ```javascript
 log([math.sqrt => 1]px);
 ```
+
+## Variables and Assignments
+Variables can be defined with the following syntax:
+```javascript
+#myVar = value
+```
+Variables can then be referenced or reassigned:
+```javascript
+log(#myVar);
+#myVar = value;
+```
