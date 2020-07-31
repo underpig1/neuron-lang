@@ -1,6 +1,6 @@
 Neuron API Reference
 ====================
-## Window API
+
 .. glossary::
 
     Sphinx
