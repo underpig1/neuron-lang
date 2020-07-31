@@ -1,135 +1,62 @@
 Neuron Standard Properties Reference
 ====================================
 
-Window API
-^^^^^^^^^^
-Properties
-----------
-``window.width``
-    Returns the width of the current window
-``window.height``
-    Returns the height of the current window
-Static Properties
------------------
-``window.event``
-    Returns the event of the current window
-
-Math API
-^^^^^^^^
-Static Properties
------------------
-``math.infinity``
-    Returns the value of infinity
-``math.pi``
-    Returns the value of pi
-``math.E``
-    Returns the value of Euler's constant
 Static Methods
 -----------------
-``[math.abs => x]``
-    Returns the absolute value of ``x``
-``[math.acos => x]``
-    Returns the arccosine of ``x``
-``[math.acosh => x]``
-    Returns the hyperbolic arccosine of ``x``
-``[math.asin => x]``
-    Returns the arcsine of ``x``
-``[math.asinh => x]``
-    Returns the hyperbolic arcsine of ``x``
-``[math.atan => x]``
-    Returns the arctangent of ``x``
-``[math.atanh => x]``
-    Returns the hyperbolic arctangent of ``x``
-``[math.atan2 => x y]``
-    Returns the arctangent of the quotient of ``x`` and ``y``
-``[math.cbrt => x]``
-    Returns the cube root of ``x``
-``[math.ceil => x]``
-    Returns the smallest integer greater than or equal to ``x``
-``[math.clz32 => x]``
-    Returns the number of leading zeroes of the 32-bit integer ``x``
-``[math.cos => x]``
-    Returns the cosine of ``x``
-``[math.cosh => x]``
-    Returns the hyperbolic cosine of ``x``
-``[math.fround => x]``
-    Returns the nearest single precision float representation of ``x``
-``[math.hypot => ...]``
-    Returns the square root of the sum of squares of its arguments
-``[math.imul => x y]``
-    Returns the result of the 32-bit integer multiplication of ``x`` and ``y``
-``[math.log => x]``
-    Returns the natural logarithm of ``x``
-``[math.log10 => x]``
-    Returns the base-10 logarithm of ``x``
-``[math.log2 => x]``
-    Returns the base-2 logarithm of ``x``
-``[math.max => ...]``
-    Returns the largest of its arguments
-``[math.min => ...]``
-    Returns the smallest of its arguments
-``[math.pow => x y]``
-    Returns base ``x`` to the exponent power ``y``
-``[math.random]``
-    Returns a pseudo-random number between ``0`` and ``1``
-``[math.round => x]``
-    Returns ``x`` rounded to the nearest integer
-``[math.sign => x]``
-    Returns the sign of ``x``
-``[math.sin => x]``
-    Returns the sine of ``x``
-``[math.sinh => x]``
-    Returns the hyperbolic sine of ``x``
-``[math.sqrt => x]``
-    Returns the positive square root of ``x``
-``[math.tan => x]``
-    Returns the tangent of ``x``
-``[math.tanh => x]``
-    Returns the hyperbolic tangent of ``x``
-``[math.trunc => x]``
-    Returns the integer portion of ``x``
+``[colorspaces.hextorgba => hex]``
+    Returns the RGBA value of ``hex``
+``[int? => x]``
+    Returns a boolean corresponding to the value of ``x``, if ``x`` is an integer
+``[bool? => x]``
+    Returns a boolean corresponding to the value of ``x``, if ``x`` is a boolean
+``[concatenate => x y]``
+    Returns a string with the concatenated value of ``x`` and ``y``
+``[length? => string]``
+    Returns the length of ``string``
+``[includes? => string value]``
+    Returns a boolean corresponding to the value of ``string``, if ``string`` includes ``value``
+``[upcase => string]``
+    Returns a string corresponding to the uppercased value of ``string``
+``[downcase => string]``
+    Returns a string corresponding to the lowercased value of ``string``
+``[input]``
+    Returns the value of a prompt, containing the user input
 
-JSON API
-^^^^^^^^
-Static Methods
------------------
-``[json.parse => json]``
-    Returns the object represented by ``json``
-``[json.string => json]``
-    Returns the string value of ``json``
-
-RegExp API
-^^^^^^^^^^
-Static Methods
------------------
-``[re.match => string regexp]``
-    Returns the matching string against the regular expression
-``[re.replace => string regexp string]``
-    Returns the string value, replacing the matching strings against the regular expression
-
-Time API
-^^^^^^^^
 Static Properties
 -----------------
-``time.now``
-    Returns the numeric value corresponding to the current time
-``time.day``
-    Returns the numeric value corresponding to the current day of the week
-``time.year``
-    Returns the numeric value corresponding to the current year
-``time.hour``
-    Returns the numeric value corresponding to the current hour
-``time.milliseconds``
-    Returns the numeric value corresponding to the current millisecond
-``time.minutes``
-    Returns the numeric value corresponding to the current minute
-``time.month``
-    Returns the numeric value corresponding to the current month
-``time.seconds``
-    Returns the numeric value corresponding to the current second
-``time.time``
-    Returns the numeric value corresponding to the current time
-``time.timezone``
-    Returns the time-zone offset in minutes for the current locale
-``time.UTC``
-    Returns the numeric value corresponding to the current day of the month according to universal time
+``inherited(object)``
+    The inheritance property
+``setProperty(object, property, value)``
+    Sets the property of the given object to the passed value
+``fill(r, g, b, a)``
+    Sets the fill property to the values passed
+``stroke(object, property, value)``
+    Sets the stroke property to the values passed
+``position(x, y)``
+    Sets the position property to the values passed
+``width(x)``
+    Sets the width property to the values passed
+``height(x)``
+    Sets the height property to the values passed
+``polygon([x, y]...)``
+    Sets the polygon property containing the passed values; generates a polygon containing the passed values
+``value(value)``
+    The shorthand variable value property
+``return(value)``
+    Returns the given value
+``gradient([color]...)``
+    Sets the gradient property containing the passed values; generates a gradient containing the passed values
+``image(url)``
+    Sets the polygon property containing the passed values; generates an image containing the passed values
+``alert(value)``
+    Produces an alert in the current window containing the given value
+``window(value)``
+    Produces a new window
+``invoke(object)``
+    Invokes the given object
+``onclick([redirect/log/alert/...], value)``
+    Executes the given function once clicked
+``appendProperty(object, property, value)``
+    Appends a property with the passed value to the given object
+``redirect(url)``
+    Redirects the page to the given URL
