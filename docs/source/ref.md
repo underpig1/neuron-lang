@@ -169,3 +169,7 @@ Iterators are capable of being embedded in executable objects.
 `=` Assignment operator
 
 ## Inheritance
+Expressions preceded by a tilde `~` are recognized as inheritance. Inheritance can be defined with the following syntax:
+```javascript
+~value
+```
