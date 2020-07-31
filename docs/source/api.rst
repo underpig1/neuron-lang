@@ -1,6 +1,7 @@
 Neuron API Reference
 ====================
 
-Sphinx : classifier
-    Sphinx is a tool that makes it easy to create intelligent and beautiful documentation. It was originally created for the Python documentation, and it has excellent facilities 
-    for the documentation of software projects in a range of languages.
+Window API
+^^^^^^^^^^
+..``window.width``: Readonly
+    Returns the width of the current window
