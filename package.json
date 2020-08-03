@@ -31,5 +31,8 @@
     "atom": ">=1.0.0 <2.0.0",
     "node": ">=6.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
