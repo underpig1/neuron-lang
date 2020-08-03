@@ -1,6 +1,6 @@
 {
   "name": "neuron-lang",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "bin/neuron.mjs",
   "keywords": [
@@ -31,5 +31,8 @@
     "atom": ">=1.0.0 <2.0.0",
     "node": ">=6.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
