@@ -3,7 +3,7 @@
   "name": "Neuron",
   "fileTypes": [
     ".neuron"
-  ]
+  ],
   "patterns": [
     {
       "match": "\/\/.*$",
