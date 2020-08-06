@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset = "UTF-8">
@@ -43,12 +44,34 @@
     <div class = "code">
       <h3>NEURON</h3>
       <div>
-        <pre contenteditable = "true">contenteditable</pre>
+        <pre id = "code" contenteditable = "true">=></pre>
       </div>
     </div>
     <div class = "sidebar">
     </div>
-    <script>
+    <script type = "module">
+      import grammers from "..../grammers/neuron-language.json"
+      
+      var patterns = document.getElementById("code");
+      var code = document.getElementById("code");
+      var text = code.innerHTML;
+      var matches = [];
+      for (var i in grammers.patterns) {
+        var re = grammers.patterns[i].match;
+        var str = code.innerHTML;
+        while ((match = re.exec(str)) != null) {
+          matches.push([match.index, re.lastIndex, grammers.patterns[i].name]);
+        }
+      }
+      for (var i in matches) {
+        highlight(code, matches[i][0], matches[i][1], matches[i][2]);
+      }
+      
+      function highlight(element, start, end, cl) {
+        var str = element.innerHTML;
+        str = `${str.substr(0, start)}<span class = "${cl}">${str.substr(start, end - start + 1)}</span>${str.substr(end + 1)}`;
+        element.innerHTML = str;
+      }
     </script>
   </body>
 </html>
