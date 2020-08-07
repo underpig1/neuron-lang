@@ -127,7 +127,7 @@
       }
       
       function highlight(element, start, end, cl) {
-        var str = element.value;
+        var str = element.innerHTML;
         str = `${str.substr(0, start)}<span class = "${cl}">${str.substr(start, end - start + 1)}</span>${str.substr(end + 1)}`;
         element.innerHTML = str;
       }
