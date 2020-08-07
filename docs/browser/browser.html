@@ -28,7 +28,7 @@
         border-bottom: 1px solid currentcolor;
       }
       
-      pre {
+      textarea {
         font-size: 1em;
         padding: 1em;
         margin: 1vh;
@@ -52,7 +52,7 @@
     <div class = "code">
       <h3>NEURON</h3>
       <div>
-        <pre id = "code" contenteditable = "true">=></pre>
+        <textarea id = "code">=></textarea>
       </div>
     </div>
     <div class = "sidebar">
@@ -112,11 +112,11 @@
         ]
       };
       var code = document.getElementById("code");
-      var text = code.innerHTML;
+      var text = code.value;
       var matches = [];
       for (var i in grammers.patterns) {
         var re = grammers.patterns[i].match;
-        var str = code.innerHTML;
+        var str = code.value;
         var match;
         while ((match = re.exec(str)) != null) {
           matches.push([match.index, re.lastIndex, grammers.patterns[i].name]);
@@ -127,9 +127,9 @@
       }
       
       function highlight(element, start, end, cl) {
-        var str = element.innerHTML;
+        var str = element.value;
         str = `${str.substr(0, start)}<span class = "${cl}">${str.substr(start, end - start + 1)}</span>${str.substr(end + 1)}`;
-        element.innerHTML = str;
+        element.value = str;
       }
     </script>
   </body>
