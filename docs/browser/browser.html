@@ -121,6 +121,7 @@
       for (var i in grammers.patterns) {
         var re = new RegExp(grammers.patterns[i].match, "g");
         var str = code.innerHTML;
+        var match;
         while ((match = re.exec(str)) != null) {
           matches.push([match.index, re.lastIndex, grammers.patterns[i].name]);
         }
