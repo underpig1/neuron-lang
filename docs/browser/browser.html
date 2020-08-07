@@ -119,11 +119,8 @@
         var str = code.innerHTML;
         var match;
         while ((match = re.exec(str)) != null) {
-          matches.push([match.index, re.lastIndex, grammers.patterns[i].name]);
+          highlight(code, match.index, re.lastIndex, grammers.patterns[i].name);
         }
-      }
-      for (var i in matches) {
-        highlight(code, matches[i][0], matches[i][1], matches[i][2]);
       }
       
       function highlight(element, start, end, cl) {
