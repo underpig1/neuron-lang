@@ -57,10 +57,64 @@
     </div>
     <div class = "sidebar">
     </div>
-    <script src = "https://github.com/underpig1/neuron-lang/blob/master/grammars/neuron-language.json"></script>
     <script type = "module">
-      import grammers from "https://github.com/underpig1/neuron-lang/blob/master/grammars/neuron-language.json"
-      
+      var grammers = JSON.parse({
+  "scopeName": "source.neuron",
+  "name": "Neuron",
+  "fileTypes": [
+    ".neuron"
+  ],
+  "patterns": [
+    {
+      "match": "\/\/.*$",
+      "name": "comment"
+    },
+    {
+      "match": "\w+(?=\s*?\{)",
+      "name": "entity.name.function"
+    },
+    {
+      "match": "\w+(?=\s*?\()",
+      "name": "entity.name.function"
+    },
+    {
+      "match': "\=\>",
+      "name': "entity.name.function"
+    },
+    {
+      "match": "^(?=\:)",
+      "name": "entity.name.type"
+    },
+    {
+      "match": "[0-9]",
+      "name": "constant.numeric"
+    },
+    {
+      "match": "#\S+',
+      "name": "entity.name.type"
+    },
+    {
+      "match": "\w+(?=\.)",
+      "name": "entity.name.type"
+    },
+    {
+      "match": "=",
+      "name": "keyword.operator"
+    },
+    {
+      "match": "return|value",
+      "name": "keyword.control"
+    },
+    {
+      "match": "true|false|null",
+      "name": "constant.language"
+    },
+    {
+      "match": "this",
+      "name": "variable.language"
+    }
+  ]
+})
       var patterns = document.getElementById("code");
       var code = document.getElementById("code");
       var text = code.innerHTML;
