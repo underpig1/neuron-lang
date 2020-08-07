@@ -137,9 +137,13 @@
       setInterval(syntax, 10);
       
       function syntax() {
-        var cursorStart = code.target.selectionStart;
-        var cursorEnd = code.target.selectionEnd;
+        var selection = document.getSelection();
         code.innerHTML = text;
+        var range = document.createRange();
+        range.setStart(selection.getRangeAt(0).startOffset);
+        range.setEnd(selection.getRangeAt(0).endOffset);
+        selection.removeAllRanges();
+        selection.addRange(range);
         for (var i in grammers.patterns) {
           highlight(grammers.patterns[i].match, grammers.patterns[i].name);
         }
