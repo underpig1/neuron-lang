@@ -120,8 +120,11 @@
         var str = html;
         var match;
         while ((match = re.exec(str)) != null) {
-          highlight(code, match.index, re.lastIndex, grammers.patterns[i].name);
+          matches.push([code, match.index, re.lastIndex, grammers.patterns[i].name]);
         }
+      }
+      for (var i in matches) {
+        highlight(...matches[i]);
       }
       code.innerHTML = html;
       
