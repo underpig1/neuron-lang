@@ -137,11 +137,15 @@
       setInterval(syntax, 10);
       
       function syntax() {
-        var selection = saveSelection(document.getElementById("code"));
+        if (window.getSelection().rangeCount > 0) {
+          var selection = saveSelection(document.getElementById("code"));
+        }
         for (var i in grammers.patterns) {
           highlight(grammers.patterns[i].match, grammers.patterns[i].name);
         }
-        restoreSelection(document.getElementById("code"), selection);
+        if (window.getSelection().rangeCount > 0) {
+          restoreSelection(document.getElementById("code"), selection);
+        }
         
         function highlight(re, cl) {
           code.innerHTML = code.innerHTML.replace(re, `<span class = "${cl}">$&</span>`);
