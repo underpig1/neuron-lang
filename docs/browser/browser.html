@@ -118,7 +118,8 @@
         var re = grammers.patterns[i].match;
         var str = code.innerHTML;
         var match;
-        console.log(str.match(grammers.patterns[i].match));
+        console.log(str);
+        console.log(grammers.patterns[i].match);
         while ((match = re.exec(str)) != null) {
           matches.push([match.index, re.lastIndex, grammers.patterns[i].name]);
         }
