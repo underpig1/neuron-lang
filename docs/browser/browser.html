@@ -40,7 +40,7 @@
       }
       
       .entity.name.function {
-        color: purple;
+        color: #EE82EE;
       }
       
       .entity.name.type {
@@ -52,7 +52,7 @@
       }
       
       .keyword.control {
-        color: purple;
+        color: #EE82EE;
       }
       
       .constant.language {
@@ -60,7 +60,7 @@
       }
       
       .comment {
-        color: gray;
+        color: #A9A9A9;
       }
       
       .variable.language {
@@ -102,7 +102,7 @@
             name: "entity name function"
           },
           {
-            match: /(?!<span[^>]*?>)(^(?=\:))(?![^<]*?<\/span>)/g,
+            match: /(?!<span[^>]*?>)(\w+(?=\:))(?![^<]*?<\/span>)/g,
             name: "entity name type"
           },
           {
@@ -134,12 +134,17 @@
       var code = document.getElementById("code");
       var text = code.innerHTML;
       
-      for (var i in grammers.patterns) {
-        highlight(grammers.patterns[i].match, grammers.patterns[i].name);
-      }
+      setInterval(syntax, 10);
       
-      function highlight(re, cl) {
-        code.innerHTML = code.innerHTML.replace(re, `<span class = "${cl}">$&</span>`);
+      function syntax() {
+        code.innerHTML = text;
+        for (var i in grammers.patterns) {
+          highlight(grammers.patterns[i].match, grammers.patterns[i].name);
+        }
+        
+        function highlight(re, cl) {
+          code.innerHTML = code.innerHTML.replace(re, `<span class = "${cl}">$&</span>`);
+        }
       }
     </script>
   </body>
