@@ -66,47 +66,47 @@
         ],
         patterns: [
           {
-            match: /(?!<span[^>]*?>)(\/\/.*$)(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(\/\/.*$)(?![^<]*?<\/span>)/g,
             name: "comment"
           },
           {
-            match: /(?!<span[^>]*?>)(\w+(?=\s*?\{))(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(\w+(?=\s*?\{))(?![^<]*?<\/span>)/g,
             name: "entity.name.function"
           },
           {
-            match: /(?!<span[^>]*?>)(\w+(?=\s*?\())(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(\w+(?=\s*?\())(?![^<]*?<\/span>)/g,
             name: "entity.name.function"
           },
           {
-            match: /(?!<span[^>]*?>)(\=\&gt;)(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(\=\&gt;)(?![^<]*?<\/span>)/g,
             name: "entity.name.function"
           },
           {
-            match: /(?!<span[^>]*?>)(^(?=\:))(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(^(?=\:))(?![^<]*?<\/span>)/g,
             name: "entity.name.type"
           },
           {
-            match: /(?!<span[^>]*?>)([0-9])(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)([0-9])(?![^<]*?<\/span>)/g,
             name: "constant.numeric"
           },
           {
-            match: /(?!<span[^>]*?>)(#\S+)(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(#\S+)(?![^<]*?<\/span>)/g,
             name: "entity.name.type"
           },
           {
-            match: /(?!<span[^>]*?>)(\w+(?=\.))(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(\w+(?=\.))(?![^<]*?<\/span>)/g,
             name: "entity.name.type"
           },
           {
-            match: /(?!<span[^>]*?>)(return|value)(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(return|value)(?![^<]*?<\/span>)/g,
             name: "keyword.control"
           },
           {
-            match: /(?!<span[^>]*?>)(true|false|null)(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(true|false|null)(?![^<]*?<\/span>)/g,
             name: "constant.language"
           },
           {
-            match: /(?!<span[^>]*?>)(this)(?![^<]*?</span>)/g,
+            match: /(?!<span[^>]*?>)(this)(?![^<]*?<\/span>)/g,
             name: "variable.language"
           }
         ]
