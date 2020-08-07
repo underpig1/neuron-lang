@@ -122,6 +122,7 @@
           matches.push([match.index, re.lastIndex, grammers.patterns[i].name]);
         }
       }
+      console.log(matches);
       for (var i in matches) {
         highlight(code, matches[i][0], matches[i][1], matches[i][2]);
       }
