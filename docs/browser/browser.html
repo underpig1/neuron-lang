@@ -119,7 +119,7 @@
       var text = code.innerHTML;
       var matches = [];
       for (var i in grammers.patterns) {
-        var re = grammers.patterns[i].match;
+        var re = new RegExp(grammers.patterns[i].match, "g");
         var str = code.innerHTML;
         while ((match = re.exec(str)) != null) {
           matches.push([match.index, re.lastIndex, grammers.patterns[i].name]);
