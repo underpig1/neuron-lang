@@ -5,8 +5,6 @@
     <title>Neuron Console</title>
     <meta name = "description" content = "Neuron Console">
     <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel = "stylesheet">
-    <link rel = "stylesheet" href = "lib/codemirror.css">
-    <script src = "lib/codemirror.js"></script>
     <style>
       body {
         margin: 0;
@@ -139,10 +137,13 @@
       setInterval(syntax, 10);
       
       function syntax() {
+        var cursorStart = e.target.selectionStart;
+        var cursorEnd = e.target.selectionEnd;
         code.innerHTML = text;
         for (var i in grammers.patterns) {
           highlight(grammers.patterns[i].match, grammers.patterns[i].name);
         }
+        code.target.setSelectionRange(cursorStart, cursorEnd);
         
         function highlight(re, cl) {
           code.innerHTML = code.innerHTML.replace(re, `<span class = "${cl}">$&</span>`);
