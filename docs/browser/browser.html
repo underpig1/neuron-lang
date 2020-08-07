@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset = "UTF-8">
-    <title>Neuron Compiler</title>
-    <meta name = "description" content = "Neuron Compiler">
+    <title>Neuron Console</title>
+    <meta name = "description" content = "Neuron Console">
     <link href = "https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel = "stylesheet">
     <style>
       body {
@@ -122,12 +122,13 @@
           highlight(code, match.index, re.lastIndex, grammers.patterns[i].name);
         }
       }
-      
+      var html = "";
       function highlight(element, start, end, cl) {
         var str = element.innerHTML;
         str = `${str.substr(0, start)}<span class = "${cl}">${str.substr(start, end - start + 1)}</span>${str.substr(end + 1)}`;
-        element.innerHTML = str;
+        html = str;
       }
+      code.innerHTML = html;
     </script>
   </body>
 </html>
