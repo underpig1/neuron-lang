@@ -114,9 +114,7 @@
       var code = document.getElementById("code");
       var text = code.innerHTML;
       
-      for (var i in grammers.patterns) {
-        highlight(grammers.patterns[i].match, grammers.patterns[i].name);
-      }
+      highlight(/entity/g, "entity.name.function");
       
       function highlight(re, cl) {
         code.innerHTML = code.innerHTML.replace(re, `<span class = "${cl}">$&</span>`);
