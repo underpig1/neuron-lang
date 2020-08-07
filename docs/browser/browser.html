@@ -58,63 +58,63 @@
     <div class = "sidebar">
     </div>
     <script type = "module">
-      var grammers = JSON.parse(`{
-        "scopeName": "source.neuron",
-        "name": "Neuron",
-        "fileTypes": [
+      var grammers = {
+        scopeName: "source.neuron",
+        name: "Neuron",
+        fileTypes: [
           ".neuron"
         ],
-        "patterns": [
+        patterns: [
           {
-            "match": "\/\/.*$",
-            "name": "comment"
+            match: "\/\/.*$",
+            name: "comment"
           },
           {
-            "match": "\w+(?=\s*?\{)",
-            "name": "entity.name.function"
+            match: "\w+(?=\s*?\{)",
+            name: "entity.name.function"
           },
           {
-            "match": "\w+(?=\s*?\())",
-            "name": "entity.name.function"
+            match: "\w+(?=\s*?\()",
+            name: "entity.name.function"
           },
           {
-            "match": "\=\>",
-            "name": "entity.name.function"
+            match: "\=\>",
+            name: "entity.name.function"
           },
           {
-            "match": "^(?=\:)",
-            "name": "entity.name.type"
+            match: "^(?=\:)",
+            name: "entity.name.type"
           },
           {
-            "match": "[0-9]",
-            "name": "constant.numeric"
+            match: "[0-9]",
+            name: "constant.numeric"
           },
           {
-            "match": "#\S+",
-            "name": "entity.name.type"
+            match: "#\S+",
+            name: "entity.name.type"
           },
           {
-            "match": "\w+(?=\.)",
-            "name": "entity.name.type"
+            match: "\w+(?=\.)",
+            name: "entity.name.type"
           },
           {
-            "match": "=",
+            match: "=",
             "name": "keyword.operator"
           },
           {
-            "match": "return|value",
-            "name": "keyword.control"
+            match: "return|value",
+            name: "keyword.control"
           },
           {
-            "match": "true|false|null",
-            "name": "constant.language"
+            match: "true|false|null",
+            name: "constant.language"
           },
           {
-            "match": "this",
-            "name": "variable.language"
+            match: "this",
+            name: "variable.language"
           }
         ]
-      }`);
+      };
       var code = document.getElementById("code");
       var text = code.innerHTML;
       var matches = [];
