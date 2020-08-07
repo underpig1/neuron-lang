@@ -136,7 +136,7 @@
       
       setInterval(syntax, 100);
       
-      function syntax() {
+      function syntax() {code.innerHTML = code.innerHTML.replace(/<span[^>]*?>/g, "").replace(/<\/span>/g, "")
         if (window.getSelection().rangeCount > 0) {
           var selection = saveSelection(document.getElementById("code"));
         }
