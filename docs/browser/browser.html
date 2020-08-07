@@ -66,51 +66,51 @@
         ],
         patterns: [
           {
-            match: "\/\/.*$",
+            match: /\/\/.*$/g,
             name: "comment"
           },
           {
-            match: "\w+\(?=\s*?\{\)",
+            match: /\w+\(?=\s*?\{\)/g,
             name: "entity.name.function"
           },
           {
-            match: "\w+\(?=\s*?\(\)",
+            match: /\w+(?=\s*?\()/g,
             name: "entity.name.function"
           },
           {
-            match: "\=\>",
+            match: /\=\>/g,
             name: "entity.name.function"
           },
           {
-            match: "^\(?=\:\)",
+            match: /^(?=\:)/g,
             name: "entity.name.type"
           },
           {
-            match: "[0-9]",
+            match: /[0-9]/g,
             name: "constant.numeric"
           },
           {
-            match: "#\S+",
+            match: /#\S+/g,
             name: "entity.name.type"
           },
           {
-            match: "\w+\(?=\.\)",
+            match: /\w+(?=\.)/g,
             name: "entity.name.type"
           },
           {
-            match: "=",
+            match: /=/g,
             "name": "keyword.operator"
           },
           {
-            match: "return|value",
+            match: /return|value/g,
             name: "keyword.control"
           },
           {
-            match: "true|false|null",
+            match: /true|false|null/g,
             name: "constant.language"
           },
           {
-            match: "this",
+            match: /this/g,
             name: "variable.language"
           }
         ]
@@ -119,7 +119,7 @@
       var text = code.innerHTML;
       var matches = [];
       for (var i in grammers.patterns) {
-        var re = new RegExp(grammers.patterns[i].match, "g");
+        var re = grammers.patterns[i].match;
         var str = code.innerHTML;
         var match;
         while ((match = re.exec(str)) != null) {
