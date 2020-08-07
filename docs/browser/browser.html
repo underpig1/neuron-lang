@@ -119,9 +119,7 @@
       }
       
       function highlight(re, cl) {
-        code.innerHTML = code.innerHTML.replace(re, function (match, p1, p2, p3, offset, string) {
-          return `<span class = "${cl}">${match}</span>`;
-        });
+        code.innerHTML = code.innerHTML.replace(re, `<span class = "${cl}">$&</span>`);
       }
     </script>
   </body>
