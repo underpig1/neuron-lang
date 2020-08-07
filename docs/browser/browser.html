@@ -137,11 +137,11 @@
       setInterval(syntax, 10);
       
       function syntax() {
-        var savedSelection = saveSelection(document.getElementById("code"));
+        var selection = saveSelection(document.getElementById("code"));
         for (var i in grammers.patterns) {
           highlight(grammers.patterns[i].match, grammers.patterns[i].name);
         }
-        restoreSelection(document.getElementById("code"), savedSelection);
+        restoreSelection(document.getElementById("code"), selection);
         
         function highlight(re, cl) {
           code.innerHTML = code.innerHTML.replace(re, `<span class = "${cl}">$&</span>`);
