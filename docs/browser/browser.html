@@ -114,6 +114,7 @@
       var code = document.getElementById("code");
       var text = code.innerHTML;
       var matches = [];
+      var html = code.innerHTML;
       for (var i in grammers.patterns) {
         var re = grammers.patterns[i].match;
         var str = code.innerHTML;
@@ -122,13 +123,11 @@
           highlight(code, match.index, re.lastIndex, grammers.patterns[i].name);
         }
       }
-      var html = "";
-      function highlight(element, start, end, cl) {
-        var str = element.innerHTML;
-        str = `${str.substr(0, start)}<span class = "${cl}">${str.substr(start, end - start + 1)}</span>${str.substr(end + 1)}`;
-        html = str;
-      }
       code.innerHTML = html;
+      
+      function highlight(element, start, end, cl) {
+        html = `${html.substr(0, start)}<span class = "${cl}">${html.substr(start, end - start + 1)}</span>${html.substr(end + 1)}`;
+      }
     </script>
   </body>
 </html>
