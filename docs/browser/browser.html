@@ -66,47 +66,47 @@
         ],
         patterns: [
           {
-            match: /\/\/.*$/g,
+            match: /(?!<span[^>]*?>)(\/\/.*$)(?![^<]*?</span>)/g,
             name: "comment"
           },
           {
-            match: /\w+(?=\s*?\{)/g,
+            match: /(?!<span[^>]*?>)(\w+(?=\s*?\{))(?![^<]*?</span>)/g,
             name: "entity.name.function"
           },
           {
-            match: /\w+(?=\s*?\()/g,
+            match: /(?!<span[^>]*?>)(\w+(?=\s*?\())(?![^<]*?</span>)/g,
             name: "entity.name.function"
           },
           {
-            match: /\=\&gt;/g,
+            match: /(?!<span[^>]*?>)(\=\&gt;)(?![^<]*?</span>)/g,
             name: "entity.name.function"
           },
           {
-            match: /^(?=\:)/g,
+            match: /(?!<span[^>]*?>)(^(?=\:))(?![^<]*?</span>)/g,
             name: "entity.name.type"
           },
           {
-            match: /[0-9]/g,
+            match: /(?!<span[^>]*?>)([0-9])(?![^<]*?</span>)/g,
             name: "constant.numeric"
           },
           {
-            match: /#\S+/g,
+            match: /(?!<span[^>]*?>)(#\S+)(?![^<]*?</span>)/g,
             name: "entity.name.type"
           },
           {
-            match: /\w+(?=\.)/g,
+            match: /(?!<span[^>]*?>)(\w+(?=\.))(?![^<]*?</span>)/g,
             name: "entity.name.type"
           },
           {
-            match: /return|value/g,
+            match: /(?!<span[^>]*?>)(return|value)(?![^<]*?</span>)/g,
             name: "keyword.control"
           },
           {
-            match: /true|false|null/g,
+            match: /(?!<span[^>]*?>)(true|false|null)(?![^<]*?</span>)/g,
             name: "constant.language"
           },
           {
-            match: /this/g,
+            match: /(?!<span[^>]*?>)(this)(?![^<]*?</span>)/g,
             name: "variable.language"
           }
         ]
@@ -114,7 +114,9 @@
       var code = document.getElementById("code");
       var text = code.innerHTML;
       
-      highlight(/entity/g, "entity.name.function");
+      for (var i in grammers.patterns) {
+        highlight(grammers.patterns[i].match, grammers.patterns[i].name);
+      }
       
       function highlight(re, cl) {
         code.innerHTML = code.innerHTML.replace(re, `<span class = "${cl}">$&</span>`);
