@@ -50,7 +50,7 @@ Use Neuron in the browser through its web framework:
 
 ## Features
 - Object-oriented programming
-- Consise and forgiving syntax
+- Concise and forgiving syntax
 - Features the long-awaited unity of HTML, CSS, and JavaScript
 - Support in most browsers without third-party software
 - Comprehensive standard library
